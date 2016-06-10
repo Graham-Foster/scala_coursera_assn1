@@ -12,6 +12,7 @@ object Main {
 
   /**
     * Exercise 1
+    * Check for the value of a number given its position in pascal's triangle
     */
   def pascal(c: Int, r: Int): Int = {
     if (c == 0 || c == r) 1
@@ -20,6 +21,7 @@ object Main {
 
   /**
     * Exercise 2
+    * Check whether the given string has valid parentheses
     */
   def balanceStepper(runningTotal: Int, chars: List[Char]): Int = {
     if (chars.isEmpty) runningTotal
@@ -35,6 +37,7 @@ object Main {
 
   /**
     * Exercise 3
+    * Given an amount and a list of coin denominations, determine how many ways there are to compose that amount
     */
   def countChange(money: Int, coins: List[Int]): Int = {
     if (money == 0) 1
